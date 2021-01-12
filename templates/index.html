@@ -162,7 +162,7 @@
         </tbody>
       </table>   
     </div>
-  <div class="col-md-4 mt-2 col-sm-12">
+    <div class="col-md-4 mt-2 col-sm-12">
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript">
         google.charts.load('current', {'packages':['corechart']});
@@ -170,16 +170,20 @@
 
         function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales'],
-          ['2004',  200],
-          ['2005',  206],
-          ['2006',  230],
-          ['2007',  250]
+          ['Year', 'Algorithm'],
+          ['XG',  1200],
+          ['SVR', 1500],
+          ['RR',  1800],
+          ['KNN',  900],
+          ['CB',  800],
+          ['AB',  1600],
+          ['ANN', 1100],
+          ['RF',  1300],
         ]);
 
         var options = {
-          title: 'Company Performance',
-          curveType: 'function',
+          title: 'Predicted Value (kN)',
+          curveType: 'scatter',
           legend: { position: 'bottom' }
         };
 
@@ -190,7 +194,7 @@
     </script>
      </head>
       <body>
-        <div id="curve_chart" style="width: 200px; height: 100px"></div>
+        <div id="curve_chart" style="width: 900px; height: 500px"></div>
   
       </div>
       </div>
@@ -198,3 +202,4 @@
     </body>
 
     </html>
+
